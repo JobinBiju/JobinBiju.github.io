@@ -341,6 +341,7 @@
   }
   .work__desc {
       margin-top: 12px;
+      text-align: justify;
   }
   
   /* ===== CONTACT =====*/
@@ -368,8 +369,8 @@
   
   /* ===== FOOTER =====*/
   .footer{
-    background-color: var(--second-color);
-    color: #222831;
+    background-color: #393e46;
+    color: var(--second-color);
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
@@ -383,7 +384,7 @@
   }
   .footer__icon{
     font-size: 1.5rem;
-    color: #222831;
+    color: var(--second-color);
     margin: 0 var(--mb-2)
   }
   
