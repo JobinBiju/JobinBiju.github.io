@@ -339,6 +339,9 @@
   .work__img img:hover{
     transform: scale(1.1);
   }
+  .work__desc {
+      margin-top: 12px;
+  }
   
   /* ===== CONTACT =====*/
   .contact__input{
@@ -469,6 +472,6 @@
       margin-right: auto;
     }
     .home__img{
-      right: 10%;
+      right: 5%;
     }
   }
