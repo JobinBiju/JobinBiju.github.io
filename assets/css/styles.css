@@ -6,13 +6,13 @@
     --font-semi: 600;
   }
   
-  /*===== Colores =====*/
+  /*===== Colors =====*/
   :root{
     --first-color: #fd7014;
     --second-color: #eeeeee;
   }
   
-  /*===== Fuente y tipografia =====*/
+  /*===== fonts =====*/
   :root{
     --body-font: 'Raleway', sans-serif;
     --big-font-size: 2rem;
@@ -27,7 +27,7 @@
     }
   }
   
-  /*===== Margenes =====*/
+  /*===== Margines =====*/
   :root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;
@@ -102,14 +102,23 @@
   }
   
   /*===== LAYOUT =====*/
-  .bd-grid{
+  .bd-grid {
     max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
     width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
+    padding-left: var(--mb-2);
+    padding-right: var(--mb-2);
+  }
+  .bd-grid2{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    padding-left: var(--mb-2);
+    padding-right: var(--mb-2);
   }
   .l-header{
     width: 100%;
@@ -128,13 +137,14 @@
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
+    width: 100%;
   }
   @media screen and (max-width: 768px){
     .nav__menu{
       position: fixed;
       top: var(--header-height);
       right: -100%;
-      width: 60%;
+      width: 80%;
       height: 100%;
       padding: 2rem;
       background-color: #393e46;
@@ -186,10 +196,16 @@
   }
   
   /*===== HOME =====*/
+  .pattern {
+      position: absolute;
+      z-index: var(--z-back);
+      height: calc(100vh);
+      object-fit: cover;
+      width: 100%;
+  }
   .home{
     height: calc(100vh - 3rem);
     row-gap: 1rem;
-    
   }
   .home__data{
     align-self: center;
@@ -236,6 +252,14 @@
   .button:hover{
     box-shadow: 0 10px 36px rgba(0,0,0,.15);
   }
+  .rbutton{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #222831;
+    padding: .35rem 1rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+  }
   
   /* ===== ABOUT =====*/
   .about__container{
@@ -272,14 +296,14 @@
     margin-bottom: var(--mb-4);
   }
   .skills__data{
-      background-color: #393e46;
+    background-color: #393e46;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     font-weight: var(--font-semi);
     padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-2);
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
   }
@@ -303,6 +327,9 @@
   }
   .skills__flutter{
     width: 90%;
+  }
+  .skills__arduino{
+    width: 85%;
   }
   .skills__python{
     width: 75%;
@@ -472,6 +499,10 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .bd-grid2{
+        margin-left: auto;
+        margin-right: auto;
+      }
     .home__img{
       right: 5%;
     }
