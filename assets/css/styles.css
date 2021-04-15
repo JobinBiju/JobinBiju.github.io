@@ -234,6 +234,7 @@ img {
   left: 0;
   top: 1.5rem;
   background-color: var(--first-color);
+  transition: all 0.5s ease;
 }
 .nav__logo {
   color: var(--second-color);
@@ -253,6 +254,7 @@ img {
   left: 0;
   top: 1.5rem;
   background-color: var(--first-color);
+  transition: all 0.5s ease;
 }
 
 /*=== Show menu ===*/

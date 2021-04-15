@@ -72,3 +72,20 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+const sections = document.querySelectorAll("section");
+const options = {
+  threshold: 0.7,
+};
+let observer = new IntersectionObserver(navCheck, options);
+function navCheck(entries) {
+  entries.forEach((entry) => {
+    const dataIndex = entry.target.getAttribute("dataIndex");
+    navLink.forEach((n) => n.classList.remove("active"));
+    navLink[dataIndex].classList.add("active");
+    console.log(dataIndex);
+  });
+}
+
+sections.forEach((section) => {
+  observer.observe(section);
+});

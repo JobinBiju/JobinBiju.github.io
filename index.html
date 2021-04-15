@@ -20,25 +20,29 @@
     <header class="l-header">
       <nav class="nav bd-grid2">
         <div>
-          <a href="#" class="nav__logo">Jobin</a>
+          <a href="" class="nav__logo">Jobin</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
+              <a data-page="home" href="#home" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a data-page="about" href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a data-page="skills" href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Projects</a>
+              <a data-page="projects" href="#work" class="nav__link"
+                >Projects</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a data-page="contact" href="#contact" class="nav__link"
+                >Contact</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="rbutton"
@@ -47,7 +51,6 @@
             </li>
           </ul>
         </div>
-
         <div class="nav__toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
         </div>
@@ -57,7 +60,7 @@
     <main class="l-main">
       <!--===== HOME =====-->
       <img class="pattern" src="assets/img/pattern.png" alt="pattern" />
-      <section class="home bd-grid" id="home">
+      <section dataIndex="0" class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
             Hi,<br />I'm <span class="home__title-color">Jobin</span><br />
@@ -90,9 +93,8 @@
           <img src="assets/img/profpic.png" alt="" />
         </div>
       </section>
-
       <!--===== ABOUT =====-->
-      <section class="about section" id="about">
+      <section dataIndex="1" class="about section" id="about">
         <h2 class="section-title">About</h2>
 
         <div class="about__container bd-grid">
@@ -112,9 +114,8 @@
           </div>
         </div>
       </section>
-
       <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
+      <section dataIndex="2" class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
 
         <div class="skills__container bd-grid">
@@ -234,7 +235,7 @@
       </section>
 
       <!--===== WORK =====-->
-      <section class="work section" id="work">
+      <section dataIndex="3" class="work section" id="work">
         <h2 class="section-title">Projects</h2>
 
         <div class="work__container bd-grid">
@@ -271,7 +272,7 @@
       </section>
 
       <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
+      <section dataIndex="4" class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
