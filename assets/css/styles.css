@@ -193,7 +193,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #222831;
-  box-shadow: 0 1px 4px #393e46;
+  box-shadow: 0 1px 10px #172025;
 }
 
 /*===== NAV =====*/
@@ -314,7 +314,7 @@ img {
   border-radius: 0.5rem;
 }
 .button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 36px #172025;
 }
 .rbutton {
   display: inline-block;
@@ -367,7 +367,7 @@ img {
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-2);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0 4px 25px #172025;
 }
 .skills__icon {
   font-size: 2rem;
@@ -417,7 +417,7 @@ img {
   row-gap: 2rem;
 }
 .work__img {
-  box-shadow: 0 2px 30px #1b1a17;
+  box-shadow: 0 2px 20px #172025;
   border-radius: 0.5rem;
   overflow: hidden;
 }
