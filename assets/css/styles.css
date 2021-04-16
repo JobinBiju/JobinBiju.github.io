@@ -205,6 +205,9 @@ img {
   font-weight: var(--font-semi);
 }
 @media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -254,6 +257,7 @@ img {
   left: 0;
   top: 1.5rem;
   background-color: var(--first-color);
+  border-radius: 0.2rem;
   transition: all 0.5s ease;
 }
 
@@ -322,9 +326,9 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #222831;
-  padding: 0.35rem 1rem;
+  padding: 0.28rem 0.5rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
+  border-radius: 0.44rem;
 }
 
 /* ===== ABOUT =====*/
@@ -415,15 +419,15 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
+.project__container {
   row-gap: 2rem;
 }
-.work__img {
+.project__img {
   box-shadow: 0 2px 20px #172025;
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.work__img img {
+.project__img img {
   transition: 1s;
   height: 200px;
   border-radius: 0.5rem;
@@ -431,10 +435,10 @@ img {
   object-fit: cover;
   cursor: pointer;
 }
-.work__img img:hover {
+.project__img img:hover {
   transform: scale(1.1);
 }
-.work__desc {
+.project__desc {
   margin-top: 5px;
   text-align: justify;
   padding: 10px;
@@ -550,7 +554,7 @@ img {
   .about__img img {
     width: 300px;
   }
-  .work__container {
+  .project__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
