@@ -72,11 +72,21 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+
+// query all sections
 const sections = document.querySelectorAll("section");
 const options = {
   threshold: 0.7,
 };
+
 let observer = new IntersectionObserver(navCheck, options);
+
+// observe sections
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+// function to switch between nav_entries on scroll
 function navCheck(entries) {
   entries.forEach((entry) => {
     const dataIndex = entry.target.getAttribute("dataIndex");
@@ -85,7 +95,3 @@ function navCheck(entries) {
     console.log(dataIndex);
   });
 }
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
