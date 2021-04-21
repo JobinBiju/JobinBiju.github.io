@@ -193,7 +193,9 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #222831;
-  box-shadow: 0 1px 10px #172025;
+  box-shadow: 0 1px 20px #172025;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /*===== NAV =====*/
