@@ -16,6 +16,8 @@
 :root {
   --body-font: "Raleway", sans-serif;
   --big-font-size: 2rem;
+  --project-title-font: 1rem;
+  --project-desc-font: 0.88rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
@@ -23,6 +25,8 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
+    --project-title-font: 1.1rem;
+    --project-desc-font: 0.9rem;
     --normal-font-size: 1rem;
   }
 }
@@ -447,8 +451,14 @@ img {
 }
 .project__desc {
   margin-top: 5px;
-  text-align: justify;
+  text-align: left;
   padding: 10px;
+  font-size: var(--project-desc-font);
+  line-height: 20px;
+}
+
+.bold {
+  font-size: var(--project-title-font);
 }
 
 /* ===== CONTACT =====*/
