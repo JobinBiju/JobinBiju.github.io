@@ -365,7 +365,7 @@ img {
   text-align: center;
 }
 .skills__subtitle {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 .skills__text {
   margin-bottom: var(--mb-4);
@@ -401,16 +401,16 @@ img {
   z-index: var(--z-back);
 }
 .skills__flutter {
-  width: 90%;
-}
-.skills__arduino {
   width: 85%;
 }
-.skills__python {
+.skills__arduino {
   width: 75%;
 }
+.skills__python {
+  width: 60%;
+}
 .skills__js {
-  width: 65%;
+  width: 50%;
 }
 .skills__design {
   width: 70%;
@@ -424,8 +424,8 @@ img {
 .skills__img {
   position: relative;
   border-radius: 0.5rem;
-  top: 40px;
-  height: 400px;
+  top: 32px;
+  height: 350px;
   object-fit: cover;
 }
 

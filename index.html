@@ -134,7 +134,7 @@
               </div>
               <div class="skills__bar skills__flutter"></div>
               <div>
-                <span class="skills__percentage">90%</span>
+                <span class="skills__percentage">85%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -149,7 +149,7 @@
               </div>
               <div class="skills__bar skills__arduino"></div>
               <div>
-                <span class="skills__percentage">85%</span>
+                <span class="skills__percentage">75%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -160,11 +160,11 @@
                     alt="flutter"
                     width="30px"
                 /></i>
-                <span class="skills__name">Python</span>
+                <span class="skills__name">Python & Django</span>
               </div>
               <div class="skills__bar skills__python"></div>
               <div>
-                <span class="skills__percentage">75%</span>
+                <span class="skills__percentage">60%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -179,10 +179,10 @@
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
-                <span class="skills__percentage">65%</span>
+                <span class="skills__percentage">50%</span>
               </div>
             </div>
-            <div class="skills__data">
+            <!-- <div class="skills__data">
               <div class="skills__names">
                 <i class="skills__icon"
                   ><img
@@ -196,7 +196,7 @@
               <div>
                 <span class="skills__percentage">15%</span>
               </div>
-            </div>
+            </div> -->
             <div class="skills__data">
               <div class="skills__names">
                 <i class="skills__icon"
@@ -271,18 +271,45 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+          <form
+          name="form1"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <input
+              type="hidden"
+              name="apikey"
+              value="f8642cf1-08d5-4b89-90ad-664c4c5e4d52"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact__input"
+              required
+            />
+            <input
+              type="mail"
+              name="email"
+              placeholder="Email"
+              class="contact__input"
+              required
+            />
             <textarea
               placeholder="Description"
-              name=""
-              id=""
+              name="message"
               cols="0"
               rows="6"
               class="contact__input"
+              required
             ></textarea>
-            <input type="button" value="Send" class="contact__button button" />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <input type="button" value="Send" class="contact__button button" onclick="submit_form();">
           </form>
         </div>
       </section>
