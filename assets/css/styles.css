@@ -465,6 +465,7 @@ img {
 .contact__input {
   background-color: #393e46;
   width: 100%;
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
