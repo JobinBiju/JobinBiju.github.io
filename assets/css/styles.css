@@ -440,7 +440,7 @@ img {
 }
 .project__img img {
   transition: 1s;
-  height: 200px;
+  height: 182px;
   border-radius: 0.5rem;
   width: 100%;
   object-fit: cover;
@@ -450,7 +450,7 @@ img {
   transform: scale(1.1);
 }
 .project__desc {
-  margin-top: 5px;
+  margin-top: 3px;
   text-align: left;
   padding: 10px;
   font-size: var(--project-desc-font);
