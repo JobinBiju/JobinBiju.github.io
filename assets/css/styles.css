@@ -397,30 +397,11 @@ img {
   bottom: 0;
   background-color: var(--first-color);
   height: 0.25rem;
-  border-radius: 0.5rem;
+  border-radius: 0 0 0.2rem 0.2rem;
   z-index: var(--z-back);
+  width: 99.9%;
 }
-.skills__flutter {
-  width: 85%;
-}
-.skills__arduino {
-  width: 70%;
-}
-.skills__python {
-  width: 45%;
-}
-.skills__js {
-  width: 50%;
-}
-.skills__design {
-  width: 70%;
-}
-.skills__ux {
-  width: 45%;
-}
-.skills__php {
-  width: 15%;
-}
+
 .skills__img {
   position: relative;
   border-radius: 0.5rem;
