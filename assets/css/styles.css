@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -14,7 +14,7 @@
 
 /*===== fonts =====*/
 :root {
-  --body-font: "Raleway", sans-serif;
+  --body-font: 'Raleway', sans-serif;
   --big-font-size: 2rem;
   --project-title-font: 1rem;
   --project-desc-font: 0.88rem;
@@ -80,7 +80,7 @@ body {
 }
 
 .cursor::after {
-  content: "";
+  content: '';
   width: 25px;
   height: 25px;
   position: absolute;
@@ -157,7 +157,7 @@ img {
 }
 .section-title::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 64px;
   height: 0.18rem;
   left: 0;
@@ -238,7 +238,7 @@ img {
 }
 .nav__link:hover::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 0.15rem;
   left: 0;
@@ -258,7 +258,7 @@ img {
 /*Active menu*/
 .active::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -311,7 +311,7 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 4%;
+  right: 8%;
   bottom: 4%;
   width: 70%;
   z-index: -1;
@@ -545,7 +545,7 @@ img {
   .home__img {
     width: 457px;
     bottom: 15%;
-    top: 20%;
+    right: 5%;
   }
 
   .about__container,
@@ -580,7 +580,8 @@ img {
     margin-right: auto;
   }
   .home__img {
-    right: 5%;
+    top: 22%;
+    right: 12%;
   }
   .home__data {
     margin-top: 4%;
